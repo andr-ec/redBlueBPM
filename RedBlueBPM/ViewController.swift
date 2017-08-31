@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapableButton: UIButton!
     
     @IBOutlet weak var bpmLabel: UILabel!
+    @IBOutlet weak var resetButton: UIButton!
     
     let nowTap = DTTapTempo(timeOut: 2.0, minimumTaps: 2)
     
@@ -38,5 +39,9 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func resetBpm(_ sender: Any) {
+        nowTap.resetTaps()
+        bpmLabel.text = "-- BPM"
+    }
 }
 

@@ -61,6 +61,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdt-gU-lqs">
+                                <rect key="frame" x="262" y="321" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="3h8-FI-xY5"/>
+                                    <constraint firstAttribute="width" constant="25" id="jk3-1T-3o1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="if_editor-redo-arrow-reload-glyph_763333"/>
+                                <connections>
+                                    <action selector="resetBpm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dto-Oc-U8W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -68,8 +79,10 @@
                             <constraint firstItem="Xtb-0K-iQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HF2-qF-o26"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Yx5-0Y-z59" secondAttribute="trailing" constant="60" id="ICG-er-Chg"/>
                             <constraint firstItem="Xtb-0K-iQn" firstAttribute="top" secondItem="47c-mA-c6c" secondAttribute="bottom" constant="50" id="JEu-Q2-dqc"/>
+                            <constraint firstItem="Gdt-gU-lqs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KO2-U6-GIq"/>
                             <constraint firstItem="47c-mA-c6c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UzH-Ds-2lb"/>
                             <constraint firstItem="7mg-RV-lTa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="h8P-cu-JLV"/>
+                            <constraint firstItem="Gdt-gU-lqs" firstAttribute="leading" secondItem="47c-mA-c6c" secondAttribute="trailing" constant="46.5" id="pFH-7m-7KY"/>
                             <constraint firstItem="7mg-RV-lTa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="154" id="tDQ-tb-Jge"/>
                             <constraint firstItem="Yx5-0Y-z59" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="154" id="z4J-Po-HoA"/>
                         </constraints>
@@ -77,6 +90,7 @@
                     <connections>
                         <outlet property="bpmLabel" destination="47c-mA-c6c" id="ZaR-2A-mZd"/>
                         <outlet property="playButton" destination="Yx5-0Y-z59" id="bC9-bi-hyH"/>
+                        <outlet property="resetButton" destination="Gdt-gU-lqs" id="0qY-zp-MUA"/>
                         <outlet property="tapButton" destination="7mg-RV-lTa" id="QUo-Rj-kvg"/>
                         <outlet property="tapableButton" destination="Xtb-0K-iQn" id="wjq-wq-dMT"/>
                     </connections>
@@ -86,4 +100,7 @@
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="if_editor-redo-arrow-reload-glyph_763333" width="128" height="128"/>
+    </resources>
 </document>

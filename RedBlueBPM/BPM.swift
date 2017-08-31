@@ -18,6 +18,10 @@ class DTTapTempo {
         minTaps = minimumTaps
     }
     
+    func resetTaps() -> Void {
+        taps.removeAll()
+    }
+    
     func addTap() -> Double? {
         let thisTap = NSDate()
         
