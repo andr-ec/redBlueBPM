@@ -30,16 +30,27 @@
                                 <rect key="frame" x="76" y="174" width="30" height="30"/>
                                 <state key="normal" title="TAP"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtb-0K-iQn">
-                                <rect key="frame" x="97" y="469" width="180" height="73"/>
-                                <color key="backgroundColor" red="0.0" green="0.98039215690000003" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xtb-0K-iQn" customClass="RoundButton" customModule="RedBlueBPM" customModuleProvider="target">
+                                <rect key="frame" x="87" y="394" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.76862745098039209" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="coZ-1M-1Qf"/>
-                                    <constraint firstAttribute="width" constant="180" id="w6D-Vt-Wlg"/>
+                                    <constraint firstAttribute="width" constant="200" id="JmJ-ZK-DZt"/>
+                                    <constraint firstAttribute="height" constant="200" id="b9V-UA-PQy"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="tapBPM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySc-z7-Mh9"/>
                                 </connections>
@@ -56,7 +67,7 @@
                             <constraint firstItem="47c-mA-c6c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="71F-5S-ma5"/>
                             <constraint firstItem="Xtb-0K-iQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HF2-qF-o26"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Yx5-0Y-z59" secondAttribute="trailing" constant="60" id="ICG-er-Chg"/>
-                            <constraint firstItem="Xtb-0K-iQn" firstAttribute="top" secondItem="47c-mA-c6c" secondAttribute="bottom" constant="125" id="JEu-Q2-dqc"/>
+                            <constraint firstItem="Xtb-0K-iQn" firstAttribute="top" secondItem="47c-mA-c6c" secondAttribute="bottom" constant="50" id="JEu-Q2-dqc"/>
                             <constraint firstItem="47c-mA-c6c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UzH-Ds-2lb"/>
                             <constraint firstItem="7mg-RV-lTa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="h8P-cu-JLV"/>
                             <constraint firstItem="7mg-RV-lTa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="154" id="tDQ-tb-Jge"/>

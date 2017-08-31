@@ -13,6 +13,7 @@
 		3CFB26E81F5777C300EB1CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CFB26E71F5777C300EB1CA5 /* Assets.xcassets */; };
 		3CFB26EB1F5777C300EB1CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CFB26E91F5777C300EB1CA5 /* LaunchScreen.storyboard */; };
 		3CFB26F41F578E9E00EB1CA5 /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB26F31F578E9E00EB1CA5 /* BPM.swift */; };
+		3CFB26F61F58BCE200EB1CA5 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB26F51F58BCE200EB1CA5 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3CFB26EA1F5777C300EB1CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CFB26EC1F5777C300EB1CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CFB26F31F578E9E00EB1CA5 /* BPM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPM.swift; sourceTree = "<group>"; };
+		3CFB26F51F58BCE200EB1CA5 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3CFB26E71F5777C300EB1CA5 /* Assets.xcassets */,
 				3CFB26E91F5777C300EB1CA5 /* LaunchScreen.storyboard */,
 				3CFB26EC1F5777C300EB1CA5 /* Info.plist */,
+				3CFB26F51F58BCE200EB1CA5 /* RoundButton.swift */,
 			);
 			path = RedBlueBPM;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CFB26F61F58BCE200EB1CA5 /* RoundButton.swift in Sources */,
 				3CFB26E31F5777C300EB1CA5 /* ViewController.swift in Sources */,
 				3CFB26F41F578E9E00EB1CA5 /* BPM.swift in Sources */,
 				3CFB26E11F5777C300EB1CA5 /* AppDelegate.swift in Sources */,
