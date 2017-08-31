@@ -13,9 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var tapableButton: UIButton!
-    @IBOutlet weak var bpmText: UITextField!
     
+    @IBOutlet weak var bpmLabel: UILabel!
     
+    let nowTap = DTTapTempo(timeOut: 2.0, minimumTaps: 2)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func tapBPM(_ sender: Any) {
+        if let bpmNum  =  nowTap.addTap(){
+            let bpmInt = Int(bpmNum.rounded())
+            bpmLabel.text = "\(bpmInt) BPM"
+        }
+        
+        
+    }
     
 }
 
