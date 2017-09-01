@@ -318,6 +318,7 @@
 				3CFB26F11F5777C300EB1CA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
